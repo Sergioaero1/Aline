@@ -115,6 +115,8 @@ p {
 }
 
 .header {
+  background-color: #222224;
+  position: fixed;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -502,6 +504,7 @@ footer p {
 
 #horas{
   background-color:none;
+  color: #bbb0bb;
 }
 
 /* divs dos produtos */
@@ -553,4 +556,47 @@ footer p {
   color: #000000;
   text-align: center;
   margin-top: 5px;
+}
+
+.curso-libras {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #f5cad1;
+  border-radius: 20px;
+  margin: 50px;
+}
+
+.conteudo {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #e04c96;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.lista_descricao {
+  color: rgb(10, 9, 9);
+}
+
+.lista_descricao2 {
+  background-color: #c00679;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5em;
+  color: #36d164;
+  margin: 20px 0;
+  text-align: center;
+}
+
+#benvindo_sinais {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5em;
+  color: #d0dfdd;
+  margin: 20px 0;
+  text-align: center;
 }
