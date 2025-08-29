@@ -841,3 +841,8 @@ html {
 #modelos02{
     color: purple;
 }
+
+p {
+  font-size: 0.8rem; /* ou experimente 0.9rem */
+  line-height: 1.4;   /* reduz o espaçamento vertical */
+}
