@@ -135,7 +135,7 @@ function initWhatsAppLinks() {
     whatsappLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             // Adicionar mensagem personalizada
-            const message = encodeURIComponent('Olá! Gostaria de saber mais sobre os produtos de limpeza da Sheilas Limpeza.');
+            const message = encodeURIComponent('Olá! Gostaria de saber mais sobre seu curso de Libras.');
             const currentHref = link.getAttribute('href');
             
             if (!currentHref.includes('text=')) {
