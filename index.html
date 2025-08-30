@@ -21,7 +21,7 @@
             <nav class="nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#produtos">Curso</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
@@ -52,7 +52,7 @@
         <nav class="sidebar-nav">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#produtos">Curso</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -96,73 +96,47 @@
                 </div>
             </div>
         </section>    
-        <!-- Produtos Section 01 -->
+        <!-- Sessão da Video Aulas -->
         <section id="produtos" class="produtos">
             <div class="container">
 <!-- ===================================================================== -->
-                <div class="libras-video-wrapper">
-  <video id="librasTrailer" muted preload="metadata">
-    <source src="seu-video.mp4" type="video/mp4">
-    Seu navegador não suporta vídeo MP4.
-  </video>
-  <div class="libras-description">
-    <h2>Introdução à Língua Brasileira de Sinais</h2>
-    <p>
-      A Libras é a língua oficial da comunidade surda no Brasil, com estrutura gramatical própria e rica expressividade.
-      Reconhecida pela Lei nº 10.436/2002, ela promove inclusão e comunicação acessível.
-    </p>
+        <!--VIDEO AULA 01 INTRO-->
+        <h2>CURSO LINGIA DE LIBRAS<h2 id="modelos01">Aula 01 - Introdução a lingua de libras</h2></h2>
+            <div class="libras-video-grid">
+  <!-- Vídeo 1 -->
+  <div class="libras-video-wrapper">
+    <video class="librasTrailer" muted playsinline preload="metadata">
+      <source src="assets/vds/sobrinho_test.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo MP4.
+    </video>
+    <div class="libras-description">
+      <h2>Introdução à Língua Brasileira de Sinais</h2>
+      <p>A Libras é a língua oficial da comunidade surda no Brasil, 
+         reconhecida pela Lei nº 10.436/2002...</p>
+      <button class="btn-fullscreen" onclick="openFullscreen('assets/vds/sobrinho_test.mp4')">Veja completo</button>
+    </div>
+  </div>
+
+  <!-- Vídeo 2 -->
+  <div class="libras-video-wrapper">
+    <video class="librasTrailer" muted playsinline preload="metadata">
+      <source src="assets/vds/alua1.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo MP4.
+    </video>
+    <div class="libras-description">
+      <h2>Repertório das Primeiras Aulas</h2>
+      <p id="p_desc_vd2">
+        Configuração das Mãos;<br>
+        - Mãos abertas: Com as mãos abertas, você pode sinalizar "5" ou "olá".<br>
+        - Mão fechada: Com a mão fechada, você pode sinalizar "S" ou "sim"...
+      </p>
+      <button class="btn-fullscreen" onclick="openFullscreen('assets/vds/alua1.mp4')">Veja completo</button>
+    </div>
   </div>
 </div>
 
 <!-- ===================================================================== -->
                 
-                <h2>CURSO LINGIA DE LIBRAS<h2 id="modelos01">Aula 01 - Introdução a lingua de libras</h2></h2>
-                <div class="produtos-grid">
-                    <div class="produto-card">
-                        <img src="/assets/img/samba-cansao/A1.jpg" class="modelosTm" alt="Img Samba Cansão">
-                        <h3>Samba-Cansão</h3>
-                        <p>Samba-cansão Urban Style.</p>
-                        <div class="produto-price">A partir de R$ 23,99</div>
-                        <a href="https://wa.me/5521968689329" class="btn btn-outline" target="_blank">Comprar</a>
-                    </div>
-                    <div class="produto-card">
-                        <img src="/assets/img/samba-cansao/A2.jpg" class="modelosTm" alt="Img Samba Cansão">
-                        <h3>Samba-Cansão</h3>
-                        <p>Samba-cansão Urban Style.</p>
-                        <div class="produto-price">A partir de R$ 23,99</div>
-                        <a href="https://wa.me/5521968689329" class="btn btn-outline" target="_blank">Comprar</a>
-                    </div>
-                    <div class="produto-card">
-                        <img src="/assets/img/samba-cansao/A4.jpg" class="modelosTm" alt="Img Samba Cansão">
-                        <h3>Samba-Cansão</h3>
-                        <p>Samba-cansão Urban Style.</p>
-                        <div class="produto-price">A partir de R$ 23,99</div>
-                        <a href="https://wa.me/5521968689329" class="btn btn-outline" target="_blank">Comprar</a>
-                    </div>
-                    <div class="produto-card">
-                        <img src="/assets/img/samba-cansao/A2.jpg" class="modelosTm" alt="Img Samba Cansão">
-                        <h3>Samba-Cansão</h3>
-                        <p>Samba-cansão Urban Style.</p>
-                        <div class="produto-price">A partir de R$ 23,99</div>
-                        <a href="https://wa.me/5521968689329" class="btn btn-outline" target="_blank">Comprar</a>
-                    </div>
-                    <div class="produto-card">
-                         <img src="/assets/img/samba-cansao/A4.jpg" class="modelosTm" alt="Img Samba Cansão">
-                        <h3>Samba-Cansão</h3>
-                        <p>Samba-cansão Urban Style.</p>
-                        <div class="produto-price">A partir de R$ 23,99</div>
-                        <a href="https://wa.me/5521968689329" class="btn btn-outline" target="_blank">Comprar</a>
-                    </div>
-                    <div class="produto-card">
-                        <img src="/assets/img/samba-cansao/A1.jpg" class="modelosTm" alt="Img Samba Cansão">
-                        <h3>Samba-Cansão</h3>
-                        <p>Samba-cansão Urban Style.</p>
-                        <div class="produto-price">A partir de R$ 23,99</div>
-                        <a href="https://wa.me/5521968689329" class="btn btn-outline" target="_blank">Comprar</a>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Produtos Section 02 -->
         <section id="produtos" class="produtos">

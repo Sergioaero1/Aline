@@ -6,6 +6,53 @@ const sidebarClose = document.getElementById('sidebarClose');
 const overlay = document.getElementById('overlay');
 const navLinks = document.querySelectorAll('.nav a, .sidebar-nav a');
 
+const video = document.getElementById('librasTrailer'); // vd Aula 01
+
+// Vídeo de introdução em Libras
+// Função para iniciar e pausar o vídeo após 10 segundos
+function playPreview() {
+  video.currentTime = 0;
+  video.play();
+
+  setTimeout(() => {
+    video.pause();
+    video.currentTime = 0;
+  }, 10000); // pausa após 10 segundos
+}
+
+// Mouse hover (desktop)
+function playPreview(video) {
+  video.currentTime = 0;
+  video.play();
+
+  setTimeout(() => {
+    video.pause();
+    video.currentTime = 0;
+  }, 10000); // pausa após 10 segundos
+}
+
+document.querySelectorAll('.librasTrailer').forEach(video => {
+  // Mouse hover (desktop)
+  video.addEventListener('mouseenter', () => playPreview(video));
+  video.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+
+  // Toque (mobile)
+  video.addEventListener('touchstart', () => playPreview(video));
+});
+// video.addEventListener('mouseenter', playPreview);
+// video.addEventListener('mouseleave', () => {
+//   video.pause();
+//   video.currentTime = 0;
+// });
+
+// Toque (mobile)
+// video.addEventListener('touchstart', () => {
+//   playPreview();
+// });
+
 // Tema claro/escuro
 function initTheme() {
     const savedTheme = localStorage.getItem('theme') || 'light';
@@ -373,6 +420,43 @@ function addMetaTags() {
         document.head.appendChild(meta);
     });
 }
+
+// abrir um vídeo em tela cheia numa nova aba do navegador
+
+function openFullscreen(videoUrl) {
+  const novaAba = window.open('', '_blank');
+  if (novaAba) {
+    novaAba.document.write(`
+      <html>
+        <head>
+          <title>Vídeo em Tela Cheia</title>
+          <style>
+            html, body {
+              margin: 0;
+              padding: 0;
+              height: 100%;
+              background-color: black;
+            }
+            video {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          </style>
+        </head>
+        <body>
+          <video src="${videoUrl}" autoplay controls muted></video>
+        </body>
+      </html>
+    `);
+    novaAba.document.close();
+  } else {
+    alert('Não foi possível abrir uma nova aba. Verifique se o navegador está bloqueando pop-ups.');
+  }
+}
+
+// =======================================================================
+
 
 // Executar após carregamento
 window.addEventListener('load', addMetaTags);
