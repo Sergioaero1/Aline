@@ -940,7 +940,7 @@ p {
 }
 
 .accordion-btn:hover {
-  background-color: #eef;
+  background-color: #b8096f;
 }
 
 .accordion-content {
@@ -949,5 +949,5 @@ p {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
   font-size: 1rem;
-  color: #555;
+  color: #000000;
 }
