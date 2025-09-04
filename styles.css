@@ -854,13 +854,13 @@ p {
 }
 
 .libras-video-wrapper {
-  max-width: 320px;
+  max-width: 800px;
   width: 100%;
   margin: 0 auto;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  background-color: #f9f9f9;
+  background-color: #fcd5e8;
   display: flex;
   flex-direction: column;
 }
@@ -908,7 +908,13 @@ p {
   color: #2c0520;
 }
 
-/*ESTILIZANDO PERGUNTAS E RESPOSTAS*/
+#desc_apres {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #bb529b;
+}
+
+/*Estilização do PERGUNTAS E RESPOSTAS*/
 
 .faq-section {
   padding: 60px 20px;
@@ -940,7 +946,7 @@ p {
 }
 
 .accordion-content {
-  display: none;
+  display: flex;
   padding: 15px 20px;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
