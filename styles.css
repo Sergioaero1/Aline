@@ -916,7 +916,7 @@ p {
 
 .faq-section {
   padding: 60px 20px;
-  background-color: #f9f9f9;
+  background-color: #ca5eb1;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -924,11 +924,11 @@ p {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 40px;
-  color: #333;
+  color: #5c0349;
 }
 
 .accordion-btn {
-  background-color: #fff;
+  background-color: #f746ee;
   border: none;
   padding: 15px 20px;
   width: 100%;
