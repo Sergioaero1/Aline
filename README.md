@@ -113,11 +113,3 @@ Fully responsive layout for all devices, with clean visuals and intuitive naviga
 > Aline Diversidades believes that learning Libras opens doors to empathy and inclusion. Every lesson is crafted with care, and every sign is a bridge to understanding.
 
 ---
-
-📌 Author
-Sergio Aero
-Front-End Developer passionate about purpose-driven projects.
-[Sergioaero-Linkedn](https://www.linkedin.com/in/sergio-eustaquio/)
-
-🪄 License
-This project is licensed under the MIT License — feel free to use, adapt, and share with love 💜
