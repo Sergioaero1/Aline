@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Aline Diversidades",
+    "slug": "aline-diversidades",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/header.ico",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/logos/aineDiversidadeslogo.svg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/header.ico",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/header.ico"
+    },
+    "plugins": [
+      "expo-av"
+    ]
+  }
+}

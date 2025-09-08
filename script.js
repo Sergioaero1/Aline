@@ -42,16 +42,6 @@ document.querySelectorAll('.librasTrailer').forEach(video => {
   // Toque (mobile)
   video.addEventListener('touchstart', () => playPreview(video));
 });
-// video.addEventListener('mouseenter', playPreview);
-// video.addEventListener('mouseleave', () => {
-//   video.pause();
-//   video.currentTime = 0;
-// });
-
-// Toque (mobile)
-// video.addEventListener('touchstart', () => {
-//   playPreview();
-// });
 
 // Tema claro/escuro
 function initTheme() {
@@ -481,7 +471,7 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// ITERAÇÕES DE ACORDION NOS FAQs  ABRE/FECHA
+//ITERAÇÕES DE ACORDION NOS FAQS ABRE/FECHA
 document.querySelectorAll('.accordion-btn').forEach(button => {
   button.addEventListener('click', () => {
     const content = button.nextElementSibling;
