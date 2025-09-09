@@ -843,13 +843,19 @@ p {
   line-height: 1.4;   /* reduz o espaçamento vertical */
 }
 
-/*vd Aula 01*/
+/*VIDEO APRESENTAÇÃO*/
+
+/* #vdApresentacao{
+    max-width: 100%;
+    height: auto;
+
+} */
 
 .libras-video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 0 1rem;
 }
 
@@ -880,7 +886,7 @@ p {
 }
 
 .btn-fullscreen:hover {
-  background-color: #005fa3;
+  background-color: #015994;
 }
 .libras-video-wrapper video {
   width: 100%;
@@ -889,7 +895,7 @@ p {
   cursor: pointer;
   transition: transform 0.3s ease;
   border-bottom: 1px solid #ddd;
-  max-height: 270px; /* Altura ideal para mobile */
+  /* max-height: 470px; Altura ideal para mobile */
 }
 
 .libras-video-wrapper video:hover {
@@ -912,6 +918,13 @@ p {
   font-size: 0.9rem;
   line-height: 1.4;
   color: #bb529b;
+}
+
+.librasTrailer {
+  width: 100%;         /* ocupa toda a largura disponível */
+  height: 900px;       /* altura personalizada */
+  object-fit: cover;   /* mantém proporção e preenche o espaço */
+  border-radius: 8px;
 }
 
 /*Estilização do PERGUNTAS E RESPOSTAS*/
