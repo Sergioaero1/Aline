@@ -966,3 +966,86 @@ p {
   font-size: 1rem;
   color: #000000;
 }
+
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: 3rem auto;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  position: relative;
+  display: none;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+.carousel-slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: var(--secondary-color);
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+.carousel-indicators {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.carousel-indicators .dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: var(--border-color);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.carousel-indicators .dot.active {
+  background-color: var(--primary-color);
+}
