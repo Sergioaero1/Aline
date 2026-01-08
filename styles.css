@@ -927,8 +927,7 @@ p {
   border-radius: 8px;
 }
 
-/*Estilização do PERGUNTAS E RESPOSTAS*/
-
+/* Estilização do PERGUNTAS E RESPOSTAS */
 .faq-section {
   padding: 60px 20px;
   background-color: #ca5eb1;
@@ -959,14 +958,21 @@ p {
 }
 
 .accordion-content {
-  display: flex;
+  display: none; /* todas começam fechadas */
   padding: 15px 20px;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
   font-size: 1rem;
-  color: #000000;
+  color: #000;
 }
 
+.accordion-content.active {
+  display: block; /* só abre quando tiver a classe active */
+  /* se quiser que o conteúdo interno use flex, pode colocar aqui */
+  display: flex;
+}
+
+/* Estilização do CAROUSEL */
 .carousel {
   position: relative;
   max-width: 100%;

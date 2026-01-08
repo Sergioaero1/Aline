@@ -16,7 +16,6 @@ function playPreview(videoElement = video) {
     videoElement.currentTime = 0;
   }, 10000);
 }
-
 document.querySelectorAll('.librasTrailer').forEach(video => {
   video.addEventListener('mouseenter', () => playPreview(video));
   video.addEventListener('mouseleave', () => { video.pause(); video.currentTime = 0; });
@@ -232,46 +231,80 @@ function initCarousel() {
   const dots = document.querySelectorAll('.dot');
   const prevBtn = document.querySelector('.carousel-btn.prev');
   const nextBtn = document.querySelector('.carousel-btn.next');
+  if (!slides.length || !prevBtn || !nextBtn || !dots.length) return;
+
   let currentIndex = 0;
+  let autoplayTimer = null;
 
   function showSlide(index) {
     slides.forEach((slide, i) => {
       slide.classList.toggle('active', i === index);
-      dots[i].classList.toggle('active', i === index);
+      if (dots[i]) dots[i].classList.toggle('active', i === index);
     });
     currentIndex = index;
   }
 
-  // Botão anterior
-  prevBtn.addEventListener('click', () => {
-    let newIndex = (currentIndex - 1 + slides.length) % slides.length;
+  function nextSlide() {
+    const newIndex = (currentIndex + 1) % slides.length;
     showSlide(newIndex);
-  });
+  }
 
-  // Botão próximo
-  nextBtn.addEventListener('click', () => {
-    let newIndex = (currentIndex + 1) % slides.length;
+  function prevSlide() {
+    const newIndex = (currentIndex - 1 + slides.length) % slides.length;
     showSlide(newIndex);
-  });
+  }
+
+  function startAutoplay() {
+    stopAutoplay();
+    autoplayTimer = setInterval(nextSlide, 5000);
+  }
+
+  function stopAutoplay() {
+    if (autoplayTimer) {
+      clearInterval(autoplayTimer);
+      autoplayTimer = null;
+    }
+  }
+
+  // Controles
+  prevBtn.addEventListener('click', prevSlide);
+  nextBtn.addEventListener('click', nextSlide);
 
   // Indicadores (bolinhas)
   dots.forEach((dot, i) => {
     dot.addEventListener('click', () => showSlide(i));
   });
 
-  // Auto-play a cada 5 segundos
-  setInterval(() => {
-    let newIndex = (currentIndex + 1) % slides.length;
-    showSlide(newIndex);
-  }, 5000);
+  // Pausar autoplay ao interagir com o mouse
+  const carousel = document.querySelector('.carousel');
+  if (carousel) {
+    carousel.addEventListener('mouseenter', stopAutoplay);
+    carousel.addEventListener('mouseleave', startAutoplay);
+  }
 
-  // Inicializa no primeiro slide
+  // Inicializa
   showSlide(0);
+  startAutoplay();
+}
+
+// ==================== FAQ ACCORDION ====================
+function initFAQAccordion() {
+  const buttons = document.querySelectorAll('.accordion-btn');
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      // Fecha todos os outros
+      document.querySelectorAll('.accordion-content').forEach(c => {
+        if (c !== content) c.classList.remove('active');
+      });
+      // Alterna o atual
+      content.classList.toggle('active');
+    });
+  });
 }
 
 // ==================== INICIALIZAÇÃO ====================
 document.addEventListener('DOMContentLoaded', () => {
-  // Inicializar funcionalidades principais
   initTheme();
   animateOnScroll();
   handleHeaderScroll();
@@ -282,7 +315,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initBackToTop();
   initTypingEffect();
   animateCounters();
-  initCarousel(); // agora o carousel é chamado junto
+  initCarousel();       // chama o carousel
+  initFAQAccordion();   // chama o FAQ corrigido
 
   // Event listeners para botões
   themeToggle.addEventListener('click', toggleTheme);
@@ -290,14 +324,14 @@ document.addEventListener('DOMContentLoaded', () => {
   sidebarClose.addEventListener('click', closeSidebar);
   overlay.addEventListener('click', closeSidebar);
 
-  // Event listeners para navegação
+  // Navegação suave
   navLinks.forEach(link => {
     if (link.getAttribute('href').startsWith('#')) {
       link.addEventListener('click', smoothScroll);
     }
   });
 
-  // Fechar sidebar ao redimensionar janela
+  // Fechar sidebar ao redimensionar
   window.addEventListener('resize', () => {
     if (window.innerWidth > 768) {
       closeSidebar();
@@ -308,3 +342,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // Prevenir scroll horizontal
   document.body.style.overflowX = 'hidden';
 });
+   
