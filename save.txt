@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing Script&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/header.ico" type="image/x-icon"> type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/header.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Header Fixo -->
@@ -15,7 +15,7 @@
         <div class="container">
             <div class="logo">
                 <!--<i class="fas fa-spray-can"></i>-->
-                <img src="./assets/logos/aineDiversidadeslogo.svg" alt="Logo aineDiversidadeslogo.svg" class="logo-icon">
+                <img src="/assets/logos/aineDiversidadeslogo.svg" alt="Logo aineDiversidadeslogo.svg" class="logo-icon">
                 <span id="logo_nomeEmpresa">Aline Diversidades</span>
             </div>
             <nav class="nav">
@@ -107,7 +107,7 @@
              <!-- Vídeo APRESENTAÇÃO  -->
               <div class="libras-video-wrapper">
                <video class="librasTrailer" muted playsinline preload="metadata">
-                 <source src="./assets/vds/Apresentação.mp4" type="video/mp4">
+                 <source src="assets/vds/Apresentação.mp4" type="video/mp4">
               </video>
               <div class="libras-description">
               <h2>APRESENTAÇÃO</h2>
@@ -128,42 +128,42 @@
                 <h2>Produtos da minha loja na Shopee<h2 id="modelos02">Novos produtos em breve</h2></h2>
                 <div class="produtos-grid">
                     <div class="produto-card">
-                        <img src="./assets/images/stops/stop.webp" class="modelosTm" alt="C1 img samba-C">
+                        <img src="/assets/images/samba-cansao/C_kit-01.jpg" class="modelosTm" alt="C1 img samba-C">
                         <h3>Novos produtos em breve</h3>
                         <p>xxx</p>
                         <div class="produto-price">R$</div>
                         <a href="https://s.shopee.com.br/9KYVEAmRqU" class="btn btn-outline" target="_blank">Comprar</a>
                     </div>
                     <div class="produto-card">
-                        <img src="./assets/images/stops/stop.webp" class="modelosTm" alt="C2 img samba-C">
+                        <img src="/assets/images/samba-cansao/C2.jpg" class="modelosTm" alt="C2 img samba-C">
                         <h3>Novos produtos em breve</h3>
                         <p>xxx</p>
                         <div class="produto-price">R$</div>
                         <a href="https://s.shopee.com.br/9KYVEAmRqU" class="btn btn-outline" target="_blank">Comprar</a>
                     </div>
                     <div class="produto-card">
-                        <img src="./assets/images/stops/stop.webp" class="modelosTm" alt="C-kit img samba-C">
+                        <img src="/assets/images/samba-cansao/C1.jpg" class="modelosTm" alt="C-kit img samba-C">
                         <h3>Novos produtos em breve</h3>
                         <p>xxx</p>
                         <div class="produto-price"> R$</div>
                         <a href="https://s.shopee.com.br/9KYVEAmRqU" class="btn btn-outline" target="_blank">Comprar</a>
                     </div>
                     <div class="produto-card">
-                        <img src="./assets/images/stops/stop.webp" class="modelosTm" alt="A1 img samba-C">
+                        <img src="/assets/images/samba-cansao/A1.jpg" class="modelosTm" alt="A1 img samba-C">
                         <h3>Novos produtos em breve</h3>
                         <p>xxx</p>
                         <div class="produto-price">R$</div>
                         <a href="https://s.shopee.com.br/9KYVEAmRqU" class="btn btn-outline" target="_blank">Comprar</a>
                     </div>
                     <div class="produto-card">
-                        <img src="./assets/images/stops/stop.webp" class="modelosTm" alt="C-kit img samba-C">
+                        <img src="/assets/images/samba-cansao/C1.jpg" class="modelosTm" alt="C-kit img samba-C">
                         <h3>Novos produtos em breve</h3>
                         <p>xxx</p>
                         <div class="produto-price"> R$</div>
                         <a href="https://s.shopee.com.br/9KYVEAmRqU" class="btn btn-outline" target="_blank">Comprar</a>
                     </div>
                     <div class="produto-card">
-                        <img src="./assets/images/stops/stop.webp" class="modelosTm" alt="A1 img samba-C">
+                        <img src="/assets/images/samba-cansao/A1.jpg" class="modelosTm" alt="A1 img samba-C">
                         <h3>Novos produtos em breve</h3>
                         <p>xxx</p>
                         <div class="produto-price">R$</div>
@@ -172,57 +172,82 @@
                     
                 </div>
             </div>
-        </section>  
+        </section>   
       
         <!-- Produtos Section 02 -->
-         
         <section id="produtos" class="produtos">
             <div class="container">
-                <h2>Produtos da minha loja na Shopee<h2 id="modelos02">Novos produtos em breve</h2></h2>
+                <h2 id="modelos02"><div class="produto-card">
+                        <img src="/assets/images/samba-cansao/C1.jpg" class="modelosTm" alt="C-kit img samba-C">
+                        <h3>Novos produtos em breve</h3>
+                        <p>xxx</p>
+                        <div class="produto-price"> R$</div>
+                        <a href="https://s.shopee.com.br/9KYVEAmRqU" class="btn btn-outline" target="_blank">Comprar</a>
+                    </div>
+                    <div class="produto-card">
+                        <img src="/assets/images/samba-cansao/A1.jpg" class="modelosTm" alt="A1 img samba-C">
+                        <h3>Novos produtos em breve</h3>
+                        <p>xxx</p>
+                        <div class="produto-price">R$</div>
+                        <a href="https://s.shopee.com.br/9KYVEAmRqU" class="btn btn-outline" target="_blank">Comprar</a>
+                    </div></h2>
+
                 <div class="produtos-grid">
                     <div class="produto-card">
-                        <img src="./assets/images/stops/stop.webp" class="modelosTm" alt="C1 img samba-C">
-                        <h3>Novos produtos em breve</h3>
-                        <p>xxx</p>
-                        <div class="produto-price">R$</div>
-                        <a href="https://s.shopee.com.br/9KYVEAmRqU" class="btn btn-outline" target="_blank">Comprar</a>
-                    </div>
-                    <div class="produto-card">
-                        <img src="./assets/images/stops/stop.webp" class="modelosTm" alt="C2 img samba-C">
-                        <h3>Novos produtos em breve</h3>
-                        <p>xxx</p>
-                        <div class="produto-price">R$</div>
-                        <a href="https://s.shopee.com.br/9KYVEAmRqU" class="btn btn-outline" target="_blank">Comprar</a>
-                    </div>
-                    <div class="produto-card">
-                        <img src="./assets/images/stops/stop.webp" class="modelosTm" alt="C-kit img samba-C">
+                        <img src="/assets/images/shortSegundaPele/short-segunda_pele-01.jpg" class="modelosTm" alt="Img Camisola tule">
+                        <h3><div class="produto-card">
+                        <img src="/assets/images/samba-cansao/C1.jpg" class="modelosTm" alt="C-kit img samba-C">
                         <h3>Novos produtos em breve</h3>
                         <p>xxx</p>
                         <div class="produto-price"> R$</div>
                         <a href="https://s.shopee.com.br/9KYVEAmRqU" class="btn btn-outline" target="_blank">Comprar</a>
                     </div>
                     <div class="produto-card">
-                        <img src="./assets/images/stops/stop.webp" class="modelosTm" alt="A1 img samba-C">
+                        <img src="/assets/images/samba-cansao/A1.jpg" class="modelosTm" alt="A1 img samba-C">
                         <h3>Novos produtos em breve</h3>
                         <p>xxx</p>
                         <div class="produto-price">R$</div>
                         <a href="https://s.shopee.com.br/9KYVEAmRqU" class="btn btn-outline" target="_blank">Comprar</a>
-                    </div>
-                    <div class="produto-card">
-                        <img src="./assets/images/stops/stop.webp" class="modelosTm" alt="C-kit img samba-C">
-                        <h3>Novos produtos em breve</h3>
-                        <p>xxx</p>
+                    </div></h3>
+                        <p>Cor Novos produtos em breve</p>
                         <div class="produto-price"> R$</div>
                         <a href="https://s.shopee.com.br/9KYVEAmRqU" class="btn btn-outline" target="_blank">Comprar</a>
                     </div>
-                    <div class="produto-card">
-                        <img src="./assets/images/stops/stop.webp" class="modelosTm" alt="A1 img samba-C">
+                   <div class="produto-card">
+                        <img src="/assets/images/camisola-tule/C9.jpg" class="modelosTm" alt="Img Camisola tule">
                         <h3>Novos produtos em breve</h3>
                         <p>xxx</p>
                         <div class="produto-price">R$</div>
                         <a href="https://s.shopee.com.br/9KYVEAmRqU" class="btn btn-outline" target="_blank">Comprar</a>
                     </div>
-                    
+                    <div class="produto-card">
+                        <img src="/assets/images/camisola-tule/C9.jpg" class="modelosTm" alt="Img Camisola tule">
+                        <h3>Novos produtos em breve</h3>
+                        <p>xxx</p>
+                        <div class="produto-price">R$</div>
+                        <a href="https://s.shopee.com.br/9KYVEAmRqU" class="btn btn-outline" target="_blank">Comprar</a>
+                    </div>
+                    <div class="produto-card">
+                        <img src="/assets/images/camisola-tule/C9.jpg" class="modelosTm" alt="Img Camisola tule">
+                        <h3>Novos produtos em breve</h3>
+                        <p>xxx</p>
+                        <div class="produto-price">R$</div>
+                        <a href="https://s.shopee.com.br/9KYVEAmRqU" class="btn btn-outline" target="_blank">Comprar</a>
+                    </div>
+                    <div class="produto-card">
+                        <img src="/assets/images/camisola-tule/C9.jpg" class="modelosTm" alt="Img Camisola tule">
+                        <h3>Novos produtos em breve</h3>
+                        <p>xxx</p>
+                        <div class="produto-price">R$</div>
+                        <a href="https://s.shopee.com.br/9KYVEAmRqU" class="btn btn-outline" target="_blank">Comprar</a>
+                    </div>
+                    <div class="produto-card">
+                        <img src="/assets/images/camisola-tule/C13.jpg" class="modelosTm" alt="Img Camisola tule">
+                        <h3>Camisola</h3>
+                        <p> Algodão</p>
+                        <div class="produto-price">A partir de R$ 39,99</div>
+                        <a href="https://s.shopee.com.br/9KYVEAmRqU" class="btn btn-outline" target="_blank">Comprar</a>
+                    </div>
                 </div>
             </div>
         </section>
