@@ -401,6 +401,12 @@ h2 {
     gap: 2rem;
 }
 
+.produtos-grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+    gap: 2rem;
+}
+
 .produto-card {
     background: var(--bg-color);
     padding: 2rem;
@@ -708,6 +714,9 @@ h2 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .produtos-grid2 {
+    grid-template-columns: 1fr; /* uma coluna em telas menores */
+  }
     .nav {
         display: none;
     }
